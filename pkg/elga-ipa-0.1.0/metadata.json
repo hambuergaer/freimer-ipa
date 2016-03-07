@@ -1,0 +1,16 @@
+{
+  "name": "elga-ipa",
+  "version": "0.1.0",
+  "author": "elga",
+  "summary": "Installing Red Hat IPA client and registering on IPA server.",
+  "license": "Apache 2.0",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    }
+  ]
+}

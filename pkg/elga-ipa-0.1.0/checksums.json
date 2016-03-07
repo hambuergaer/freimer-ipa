@@ -1,0 +1,13 @@
+{
+  "README.md": "b58f14749d10beba03a9f86f727d142b",
+  "Rakefile": "20b80e526e351a74df2001f504e756d2",
+  "manifests/init.pp": "dbfbb57414b8c2e5ab9101e2ef69a424",
+  "metadata.json": "0750b6d1bddf91af3da09e7b3adb4fdc",
+  "spec/classes/init_spec.rb": "4cfc7bf69aa6b3b803cfa7e03ad697ff",
+  "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+  "templates/krb5-rhel6.erb": "071522367a540ed52c07ecf779e51646",
+  "templates/krb5-rhel7.erb": "e50c81d139bf65b454b6bc2e497acc6f",
+  "templates/sssd-rhel6.erb": "02d4a64479bbe783e92af18e0ffbb211",
+  "templates/sssd-rhel7.erb": "b09408f8db1c91d80ee0bc55887778a6",
+  "tests/init.pp": "03a760d94a1f1a2ddd3a808d82b135a0"
+}

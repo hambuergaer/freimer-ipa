@@ -1,0 +1,28 @@
+#File modified by ipa-client-install
+
+includedir /var/lib/sss/pubconf/krb5.include.d/
+
+[libdefaults]
+  default_realm = ELGA-CORE.AT
+  dns_lookup_realm = true
+  dns_lookup_kdc = true
+  rdns = false
+  ticket_lifetime = 24h
+  forwardable = yes
+  udp_preference_limit = 0
+
+
+[realms]
+  ELGA-CORE.AT = {
+    pkinit_anchors = FILE:/etc/ipa/ca.crt
+
+  }
+
+
+[domain_realm]
+  .elga-core.at = ELGA-CORE.AT
+  elga-core.at = ELGA-CORE.AT
+  .mgmt.elga-core.at = ELGA-CORE.AT
+  mgmt.elga-core.at = ELGA-CORE.AT
+
+

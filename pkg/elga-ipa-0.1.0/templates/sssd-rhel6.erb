@@ -1,0 +1,45 @@
+[domain/<%= @ipa_domain %>]
+
+cache_credentials = True
+krb5_store_password_if_offline = True
+ipa_domain = <%= @ipa_domain %>
+id_provider = ipa
+auth_provider = ipa
+access_provider = ipa
+ldap_tls_cacert = /etc/ipa/ca.crt
+ipa_hostname = <%= @hostname %>
+chpass_provider = ipa
+ipa_server = _srv_, ipa-ai-b0-01.elga-core.at
+dns_discovery_domain = elga-core.at
+
+sudo_provider = ldap
+ldap_uri = ldaps://ipa-ai-p0-01.elga-core.at, ldaps://ipa-ai-b0-01.elga-core.at
+ldap_sudo_search_base = ou=sudoers,dc=elga-core,dc=at
+ldap_sasl_mech = GSSAPI
+ldap_sasl_authid = host/sat-test-rhel6.mgmt.elga-core.at
+ldap_sasl_realm = ELGA-CORE.AT
+krb5_server = _srv_, ipa-ai-p0-01.elga-core.at
+ldap_sudo_full_refresh_interval = 120
+ldap_sudo_smart_refresh_interval = 60
+
+[sssd]
+debug_level = 3
+services = nss, sudo, pam, ssh
+config_file_version = 2
+
+domains = elga-core.at
+[nss]
+homedir_substring = /home
+
+[pam]
+
+[sudo]
+
+[autofs]
+
+[ssh]
+
+[pac]
+
+[ifp]
+

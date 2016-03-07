@@ -1,0 +1,36 @@
+[domain/elga-core.at]
+
+cache_credentials = True
+krb5_store_password_if_offline = True
+ipa_domain = elga-core.at
+id_provider = ipa
+auth_provider = ipa
+access_provider = ipa
+ldap_tls_cacert = /etc/ipa/ca.crt
+ipa_hostname = sat-test-rhel7.mgmt.elga-core.at
+chpass_provider = ipa
+ipa_server = _srv_, ipa-ai-p0-01.elga-core.at
+dns_discovery_domain = elga-core.at
+ldap_sudo_full_refresh_interval = 120
+ldap_sudo_smart_refresh_interval = 60
+
+[sssd]
+services = nss, sudo, pam, ssh
+config_file_version = 2
+
+domains = elga-core.at
+[nss]
+homedir_substring = /home
+
+[pam]
+
+[sudo]
+
+[autofs]
+
+[ssh]
+
+[pac]
+
+[ifp]
+
