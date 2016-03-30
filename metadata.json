@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "Frank Reimer",
   "summary": "Install FreeIPA Server or Client on CentOS as well as Red Hat IPA Server or Client on RHEL. The server component will only be installed on RHEL 7 or CentOS 7.",
-  "license": "GPLv3+"
+  "license": "GPLv3+",
   "source": "",
   "project_page": null,
   "issues_url": null,
