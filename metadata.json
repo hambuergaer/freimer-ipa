@@ -1,16 +1,26 @@
 {
   "name": "freimer-ipa",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Frank Reimer",
   "summary": "Install FreeIPA Server or Client on CentOS as well as Red Hat IPA Server or Client on RHEL. The server component will only be installed on RHEL 7 or CentOS 7.",
   "license": "GPLv3+",
-  "source": "",
-  "project_page": null,
-  "issues_url": null,
-  "dependencies": [
+  "source": "https://github.com/hambuergaer/freimer-ipa",
+  "project_page": "https://github.com/hambuergaer/freimer-ipa",
+  "issues_url": "https://github.com/hambuergaer/freimer-ipa/issues",
+  "operatingsystem_support": [
     {
-      "name": "puppetlabs-stdlib",
-      "version_range": ">= 1.0.0"
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
     }
   ]
 }
